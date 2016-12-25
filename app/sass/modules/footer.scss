@@ -1,0 +1,48 @@
+.site-footer {
+	padding-top: 5em;
+	padding-bottom: 5em;
+	font-size: 1em;
+	vertical-align: middle;
+	p,ul {
+		margin-top: 1em;
+		color: $gray-light;
+	}
+
+	p.numbers {
+		width: 2em;
+	}
+
+	.fa-heart {
+		color: $brand-danger;
+		margin-right: .25em;
+	}
+
+	a {
+		color: $gray-light;
+		&:hover {
+			text-decoration: none;
+			color: $brand-primary;
+		}
+	}
+
+	.navbar {
+		font-size: 1.2em;
+
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+
+	}
+
+	@include media-breakpoint-down(xs) {
+		text-align: center;
+		p, ul {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.credits {
+			margin-top: 2em;
+		}
+	}
+
+}

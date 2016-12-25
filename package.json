@@ -1,10 +1,14 @@
 {
-  "name": "package.json",
+  "name": "Onlinecrew",
   "version": "1.0.0",
-  "description": "Onlinecrew jade training.",
-  "main": "index.js",
+  "description": "Onlinecrew Designs Website",
+  "main": "",
   "author": "Harold Lupogan",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hsagulo/jade-grunt-sass.git"
+  },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
@@ -14,5 +18,8 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
     "jade": "^1.11.0"
+  },
+  "dependencies": {
+    "express-metatag": "^0.1.0"
   }
 }

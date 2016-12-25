@@ -1,0 +1,31 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Angela Jaboro
+      meta(name='description', description='Angela Jaboro Photography')
+      meta(name='keywords', content='photography website, events photographer michigan, wedding photographer michigan')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='Angela Jaboro Photography')
+      meta(property='og:title', content='Angela Jaboro Photography')
+      meta(property='og:description', content='Angela Jaboro Photography')
+      meta(property='og:image', content='http://www.onlinecrewdesigns.com/img/angelajaboro-banner.jpg')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/works/angelajaboro')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/works-angelajaboro.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

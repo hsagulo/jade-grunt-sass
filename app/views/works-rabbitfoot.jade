@@ -1,0 +1,31 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Rabbitfoot Photography
+      
+      meta(name='description', description='Rabbitfoot Photography')
+      meta(name='keywords', content='best wedding photographer tagum city, best wedding photographer davao city, wedding photographer davao, contemporary photographer davao')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='Rabbitfoot Photography')
+      meta(property='og:title', content='@OnlineCrewDesigns')
+      meta(property='og:description', content='Rabbitfoot Photography')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/works/rabbitfoot-photography')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/works-rabbitfoot.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

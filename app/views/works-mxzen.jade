@@ -1,0 +1,32 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | MX Zen Marketing
+      
+      meta(name='description', description='MX Zen Marketing')
+      meta(name='keywords', content='Motocross full stack marketing, motocross services, best motocross group')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='MX Zen Marketing')
+      meta(property='og:title', content='@OnlineCrewDesigns')
+      meta(property='og:description', content='MX Zen Marketing')
+      meta(property='og:image', content='http://www.onlinecrewdesigns.com/img/mxzen-banner.jpg')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/works/mxzen')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/works-mxzen.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

@@ -1,0 +1,31 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Arrow Tip
+      meta(name='description', description='Arrow Tip Marketing')
+      meta(name='keywords', content='Arrow tip marketing')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='Arrow Tip Marketing')
+      meta(property='og:title', content='OnlineCrew Designs')
+      meta(property='og:description', content='Arrow Tip Marketing')
+      meta(property='og:image', content='http://www.onlinecrewdesigns.com/img/arrow-banner.jpg')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/works/arrow-marketing')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/works-arrowmktg.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

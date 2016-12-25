@@ -1,0 +1,32 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Slimming Lida Daidaihua
+      
+      meta(name='description', description='Slimming Lida Daidaihua')
+      meta(name='keywords', content='slimming products philippines, slimming product south east asia, slimming product website')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='SLimming Lida Daidaihua')
+      meta(property='og:title', content='@OnlineCrewDesigns')
+      meta(property='og:description', content='SLimming Lida Daidaihua')
+      meta(property='og:image', content='http://www.onlinecrewdesigns.com/img/lida-banner.jpg')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/works/slimming-lida')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/works-slimlida.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

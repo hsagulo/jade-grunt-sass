@@ -1,0 +1,31 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Kyle Bitterman
+      meta(name='description', description='Kyle Bitterman proposed website.')
+      meta(name='keywords', content='Kyle Bitterman website, kyle bitterman professional motocross racer')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='Kyle Bitterman proposed website.')
+      meta(property='og:title', content='Kyle Bitterman')
+      meta(property='og:description', content='Kyle Bitterman proposed website.')
+      meta(property='og:image', content='http://www.onlinecrewdesigns.com/img/bitterman-banner.jpg')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/works/kylebitterman')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/works-bitterman.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

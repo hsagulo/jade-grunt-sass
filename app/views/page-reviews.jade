@@ -1,0 +1,67 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Reviews
+      meta(name='description', description='OnlineCrew designs some reviews from clients.')
+      meta(property='og:image', content='http://onlinecrewdesigns.com/img/hero-about.jpg')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/reviews')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    section.main-banner.cf
+      img(src='../img/thank-you.jpg')
+
+    section.section-reviews.default-sections.cf
+      .container
+        .col-sm-6
+          header.review-title.cf
+            h4.reviewer Dr. Stephen Anthony
+            p.reviewer-title Stress Management, Ukraine
+            
+          .review-content
+            p I have used Onlinecrew's web design services  for many projects, they helped in the design and delivery of several complex design and wordpress sites, and based on their work, I would rank them as one of the best designers I have worked with.
+            p Onlinecrew distinguished themselves by consistently working hard on design and incorporating all our feedback and there services where also budget friendly.
+            p I would highly recommend their services as they are reliable, hardworking and is able to implement several design ideas.
+
+        .col-sm-6
+          header.review-title.cf
+            h4.reviewer Joshua Jantz
+            p.reviewer-title Caveman Websites, USA
+            
+          .review-content
+            p I feel blessed to have OnlineCrew working for me. I especially appreciate the positive, happy, and can-do attitude.
+
+        .col-sm-6
+          header.review-title.cf
+            h4.reviewer Will Lai
+            p.reviewer-title Marketing SG, LLC, Singapore
+            
+          .review-content
+            p We have had the opportunity to work with Harold for more than a year. Harold has always shown great attitude and a positive spirit. He is a great team player and would communicate promptly on matters. He is professional in his dealings and a hardworking member.
+
+        .col-sm-6
+          header.review-title.cf
+            h4.reviewer Jovan Jane
+            p.reviewer-title jovanjane.com
+            
+          .review-content
+            p I found this company while searching on Instagram and Harold has been so awesome and fixing things on my site every so often! I suggested him to my friend and he did her whole website for her! He's great!
+
+        .col-sm-6
+          header.review-title.cf
+            h4.reviewer Jane Atamian
+            p.reviewer-title Jen's Invites
+            
+          .review-content
+            p Thank you so much!!! You did an amazing job on my website! I absolutely love it! I will make sure I refer everyone to you!!
+
+    block footer
+      include partials/footer.jade
+

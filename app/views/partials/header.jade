@@ -1,0 +1,47 @@
+#mobile-menu.mobile-menu.hidden-lg-up
+  #hide-menu.cf
+    img(src='img/close.svg')
+  nav.navbar.cf
+    ul.nav.nav-block
+      li.nav-item
+        a(href='/') Home
+      li.nav-item
+        a(href='/about') About
+      li.nav-item
+        a(href='/works') Works
+      li.nav-item
+        a(href='/services') Services
+      li.nav-item
+        a(href='/contact') Contact
+//.mobile-menu
+
+header.site-header.navbar-full
+  .container-fluid
+    .title-area.col-lg-3.col-md-6.col-xs-10
+      .row
+        h1.site-title
+          a(href='/') OnlineCrew
+    //.title-area
+    .site-social-media.col-lg-3.col-md-6.col-xs-10.hidden-md-down
+      .row
+        ul.list-unstyled.list-inline
+          li.list-inline-item
+            a(href='http://facebook.com/onlinecrw' target='_blank') Facebook
+          li.list-inline-item
+            a(href='http://instagram.com/onlinecrw' target='_blank') Instagram
+    //.site-social-media
+    .site-nav-widget.col-lg-6.col-sm-1.offset-xs-0.offset-md-5.offset-lg-0.col-xs-2
+      .row
+        nav.navbar.text-md-right.hidden-md-down
+          include nav.jade
+        .mobile-burger.hidden-lg-up
+          #open-menu
+            span
+            span
+            span
+
+
+
+    .site-nav-widget
+//.site-header
+          

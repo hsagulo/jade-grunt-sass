@@ -1,0 +1,31 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Dalthan Printing Press
+      meta(name='description', description='Dalthan Printing Press website.')
+      meta(name='keywords', content='Dalthan Printing Press, printing press tagum city, offset printing press tagum city, davao printing press')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='Dalthan Printing Press')
+      meta(property='og:title', content='Dalthan Printing Press')
+      meta(property='og:description', content='Dalthan Printing Press')
+      meta(property='og:image', content='http://www.onlinecrewdesigns.com/img/dalthan-banner.jpg')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/works/dalthan-printing')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/works-dalthan.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

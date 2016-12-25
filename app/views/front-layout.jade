@@ -1,0 +1,34 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Davao Web Designers
+      meta(name='description', description='We are a web design and development team based in Davao City, Philippines.')
+      meta(name='keywords', content='Web Design and Development Davao City, Web Design and Development Bohol, Web Designer Davao City, Web Designer Philippines, Web Developer Davao City, Web Designer Mindanao')
+      meta(property='og:url', content='http://www.onlinecrewdesigns.com')
+      meta(property='og:site_name', content='OnlineCrew')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='We are a web design and development team based in Davao City, Philippines.')
+      meta(property='og:title', content='OnlineCrew Designs')
+      meta(property='og:description', content='We are a web design and development team based in Davao City, Philippines.')
+      meta(property='og:image', content='http://www.onlinecrewdesigns.com/img/banner-bg.jpg')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com')
+      
+      include partials/style.jade
+    
+  
+  body.home
+    .site-container
+      block content
+
+      include front/banner.jade
+      include front/about.jade
+      include front/work.jade
+      include front/reviews.jade
+      
+      block contact
+        include partials/contact.jade
+      block footer
+        include partials/footer.jade
+

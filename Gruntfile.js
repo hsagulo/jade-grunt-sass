@@ -50,7 +50,7 @@ var build_state = 'prod',
     // for changes
     watched_sass_files = [ 'app/sass/**/*.scss' ],
     uglify_source_files = [
-        'app/js/vendor/**/*.js',
+        'app/js/**/*.js',
         'app/js/app.js',
     ],
     uglify_files = {
@@ -79,7 +79,21 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          "build/index.html": "app/views/jobs.jade"
+          "build/index.html": "app/views/jobs.jade",
+          "build/works/rabbitfoot-photography.html": "app/views/works-rabbitfoot.jade",
+          "build/works/angelajaboro.html": "app/views/works-angelajaboro.jade",
+          "build/works/penandink.html": "app/views/works-penandink.jade",
+          "build/works/arrow-marketing.html": "app/views/works-arrow.jade",
+          "build/works/dalthan-printing.html": "app/views/works-dalthanprinting.jade",
+          "build/works/slimming-lida.html": "app/views/works-lida.jade",
+          "build/works/kyleborn.html": "app/views/works-kyleborn.jade",
+          "build/works/kylebitterman.html": "app/views/works-bitterman.jade",
+          "build/works/homework.html": "app/views/works-homework.jade",
+          "build/works/mxzen.html": "app/views/works-mxzen.jade",
+          "build/about.html": "app/views/page-about.jade",
+          "build/works.html": "app/views/page-works.jade",
+          "build/reviews.html": "app/views/page-reviews.jade",
+          "build/thanks.html": "app/views/page-thanks.jade"
         }
       }
     }, //jade
@@ -121,8 +135,10 @@ module.exports = function(grunt) {
       dev: {
           files: uglify_files,
           options: {
-              beautify: true,
-              mangle: false
+            beautify: false,
+            mangle: false,
+            expand: true,    // allow dynamic building
+            flatten: true   // remove all unnecessary nesting
           },
       },
 
@@ -132,7 +148,7 @@ module.exports = function(grunt) {
       },
       releaseUnmin: {
           files: {
-              'app/js/app.js': uglify_source_files
+              'app/js/app.js': uglify_source_files,
           },
           options: {
               beautify: true,

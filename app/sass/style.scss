@@ -1,4 +1,31 @@
-//Modules
-
+//bootstrap
 @import 'bootstrap/bootstrap';
-@import 'styles/header';
+@import 'variables-bootstrap-core-override';
+
+//imports
+@import 'font-awesome';
+@import 'fonts';
+@import 'animate';
+@import 'slick';
+
+
+//front-page
+@import 'front-page/home-sections';
+@import 'front-page/banner';
+@import 'front-page/about';
+@import 'front-page/works';
+@import 'front-page/reviews';
+
+//internal-pages
+@import 'works';
+@import 'main';
+
+//modules
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/nav';
+@import 'modules/mobile-menu';
+@import 'modules/contact';
+
+
+

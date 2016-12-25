@@ -1,0 +1,31 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs
+      meta(name='description', description='We are a small graphics and web design team based in Davao City and Bohol, Philippines.')
+      meta(name='keywords', content='About Onlinecrew Designs, Onlinecrew Designs clients, Web design clients davao city, web design team davao city, web design team bohol, Web design team Mindanao')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='We are a small graphics and web design team based in Davao City and Bohol, Philippines.')
+      meta(property='og:title', content='OnlineCrew Designs')
+      meta(property='og:description', content='We are a small graphics and web design team based in Davao City and Bohol, Philippines.')
+      meta(property='og:image', content='http://www.onlinecrewdesigns.com/img/hero-about.jpg')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/about')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/about.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

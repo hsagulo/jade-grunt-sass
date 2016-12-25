@@ -1,0 +1,32 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Kyle Born
+      
+      meta(name='description', description='Kyle Born website design and mockup.')
+      meta(name='keywords', content='Kyle Born Motocross Racer, Kyleborn Motocross 50cc Motocross champion')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='Kyle Born website design')
+      meta(property='og:title', content='Kyle Born website design')
+      meta(property='og:description', content='Kyle Born website design')
+      meta(property='og:image', content='http://www.onlinecrewdesigns.com/img/kyle-banner.jpg')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/works/kyleborn')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/works-kyleborn.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

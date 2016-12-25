@@ -1,0 +1,23 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title Thank you!
+      meta(name='description', description='Thank you!')
+      meta(property='og:image', content='http://onlinecrewdesigns.com/img/hero-about.jpg')
+
+      link(rel='canonical', href='http://onlinecrewdesigns.com/thank-you')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    section.main-banner.cf
+      img(src='../img/thank-you.jpg')
+
+    block footer
+      include partials/footer.jade
+

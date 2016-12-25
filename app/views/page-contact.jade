@@ -1,0 +1,60 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Contacts
+      meta(name='description', description='Contact OnlineCrew Designs')
+      meta(name='keywords', content='Onlinecrew designs contact')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='Contact OnlineCrew Designs')
+      meta(property='og:title', content='Contact OnlineCrew Designs')
+      meta(property='og:description', content='Contact OnlineCrew Designs')
+      meta(property='og:image', content='http://onlinecrewdesigns.com/img/hero-works.jpg')
+
+      link(rel='canonical', href='http://onlinecrewdesigns.com/contacts')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+
+      section.section-contact.cf
+        .container-fluid
+          .col-lg-8.offset-lg-2
+            header.entry-header
+              h3.entry-title Ready to Talk?
+                br
+                small Start a Project or Just Say Hello
+
+            form.onlinecrew-form.hidden-xs-up(method='post' action='http://onlinecrewdesigns.com/contactengine.php')
+              .form-group
+                select#Help.form-control-lg.custom-select.form-control(name='Select')
+                  option(value='selected') How can we help you?
+                  option(value='1') Start a project
+                  option(value='2') General Inquiries
+              .form-group
+                label(for='Name') Your Name
+                  span.required.text-danger *
+                input#Name.form-control-lg.form-control(name='Name' required)
+
+              .form-group
+                label(for='Email' type='email') Email Address
+                input#Email.form-control-lg.form-control(name='Email' required)
+              .form-group
+                label(for='Phone') Phone Number
+                input#Phone.form-control-lg.form-control(name='Phone' required)
+              .form-group.textarea
+                label(for='Message') Your Message
+                textarea#Message.form-control-lg.form-control(rows='6' name='Message')
+              .form-group
+                input.btn.btn-lg.btn-block.btn-danger(type='submit' name='submit' value='Submit')
+      //.section-contact
+
+    
+    
+
+    block footer
+      include partials/footer.jade
+

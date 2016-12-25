@@ -1,0 +1,31 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Our Work
+      meta(name='description', description='OnlineCrew Designs Work')
+      meta(name='keywords', content='Onlinecrew designs work')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='OnlineCrew Designs Work')
+      meta(property='og:title', content='OnlineCrew Designs')
+      meta(property='og:description', content='OnlineCrew Designs Work')
+      meta(property='og:image', content='http://onlinecrewdesigns.com/img/hero-works.jpg')
+
+      link(rel='canonical', href='http://onlinecrewdesigns.com/works')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/works.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

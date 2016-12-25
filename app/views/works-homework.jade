@@ -1,0 +1,31 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Homework LLC
+      meta(name='description', description='Homework LLC')
+      meta(name='keywords', content='homework llc, constructions america, constructions website')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='Homework LLC')
+      meta(property='og:title', content='Homework LLC')
+      meta(property='og:description', content='Homework LLC')
+      meta(property='og:image', content='http://www.onlinecrewdesigns.com/img/homework-banner.jpg')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/works/homework')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/works-homework.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

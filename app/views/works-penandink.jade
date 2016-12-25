@@ -1,0 +1,31 @@
+doctype html
+html(lang="en" dir="ltr")
+  block head
+    include partials/head.jade
+      title OnlineCrew Designs | Pen & Ink Tattoo
+      
+      meta(name='description', description='Pen & Ink Tattoo')
+      meta(name='keywords', content='Davao Tattoo Artist, Tagum City best Tattoo Artist, tattoo shop philippines')
+      meta(property='twitter:title', content='@OnlineCrewDesigns')
+      meta(property='twitter:description', content='Pen & Ink Tattoo')
+      meta(property='og:title', content='@OnlineCrewDesigns')
+      meta(property='og:description', content='Pen & Ink Tattoo')
+
+      link(rel='canonical', href='http://www.onlinecrewdesigns.com/works/penandink')
+
+      include partials/style.jade
+  
+  body
+
+    block header
+      include partials/header.jade
+    
+    block content
+      include internal-contents/works-penandink.jade
+    
+    block contact
+      include partials/contact.jade
+
+    block footer
+      include partials/footer.jade
+

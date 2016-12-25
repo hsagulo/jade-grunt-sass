@@ -1,0 +1,30 @@
+section.section-contact.home-sections.cf#contact
+  .container-fluid
+    .col-lg-8.offset-lg-2
+      header.entry-header
+        h3.entry-title Ready to Talk?
+        button.btn.btn-lg.btn-danger#show-form Start a Project or Just Say Hello
+
+      form.onlinecrew-form.hidden-xs-up(method='post' action='http://www.onlinecrewdesigns.comcontactengine.php')
+        .form-group
+          select#Help.form-control-lg.custom-select.form-control(name='Select')
+            option(value='selected') How can we help you?
+            option(value='Start a project') Start a project
+            option(value='General Inquiries') General Inquiries
+        .form-group
+          label(for='Name') Your Name
+            span.required.text-danger *
+          input#Name.form-control-lg.form-control(name='Name' required)
+
+        .form-group
+          label(for='Email' type='email') Email Address
+          input#Email.form-control-lg.form-control(name='Email' required)
+        .form-group
+          label(for='Phone') Phone Number
+          input#Phone.form-control-lg.form-control(name='Phone' required)
+        .form-group.textarea
+          label(for='Message') Your Message
+          textarea#Message.form-control-lg.form-control(rows='6' name='Message')
+        .form-group
+          input.btn.btn-lg.btn-block.btn-danger(type='submit' name='submit' value='Submit')
+//.section-contact
