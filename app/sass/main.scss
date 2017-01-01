@@ -51,11 +51,12 @@
 
 		@include media-breakpoint-down(sm) {
 			font-size: .8em;
+			padding: 0 5%;
 		}
 
 		@include media-breakpoint-down(xs) {
 			font-size: .65em;
-			z-index: 10001;
+			z-index: 9000;
 			color: white;
 		}
 

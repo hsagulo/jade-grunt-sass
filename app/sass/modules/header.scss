@@ -92,20 +92,8 @@
 
 .home {
 	.site-header {
-		.title-area {
-			.site-title {
-				a {
-					background: url(../img/logo.svg)no-repeat top left;
-					background-size: 7em;
-					min-height: 1.875em;
-					@include media-breakpoint-down(xs) {
-						background-size: 4em;
-					}
-				}
-			}
-		}
 		a {
-		color: white;
+		color: black;
 			&:hover {
 				color: black;
 				text-decoration: none;
@@ -117,7 +105,7 @@
 			}
 		}	
 		.mobile-burger {
-			color: white;
+			color: black;
 			
 			@include media-breakpoint-down(xs) {
 				//margin-top: 1em;
@@ -129,7 +117,7 @@
 .home {
 	#open-menu {
 		span {
-			background: white;
+			background: black;
 		}
 	}
 }

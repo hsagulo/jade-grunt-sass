@@ -76,10 +76,16 @@ body {
 .default-sections {
 	background: white;
 	padding: 8em 0;
+	@include media-breakpoint-down(sm) {
+		padding: 2em 0 0;
+	}
 }
 
 .generic-sections {
 	padding: 8em 0;
+	@include media-breakpoint-down(sm) {
+		padding: 2em 0 0;
+	}
 }
 
 .btn {

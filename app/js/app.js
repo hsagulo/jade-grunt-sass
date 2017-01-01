@@ -53,9 +53,9 @@ jQuery(document).ready(function($) {
           }
 
           if(scroll >= 700) {
-            $(".site-header").addClass("on-scroll-show");
+            $(".site-header").addClass("on-scroll-show navbar-fixed-top");
           } else {
-            $(".site-header").removeClass("on-scroll-show");
+            $(".site-header").removeClass("on-scroll-show navbar-fixed-top");
           }
 
         }
