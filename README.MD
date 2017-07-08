@@ -1,38 +1,12 @@
-Bootstrap - Jade - SASS - Gruntfile
+# onlinecrew website
 
-/*
-Usage
---------------
-# run build tasks is build_state (default dev)
-# start watching for changes and build on changes
-grunt
+Github project link: https://github.com/hsagulo/onlinecrew
 
+This fork includes Sass and Grunt.
 
-# build with compressed html, css and js
-# does NOT start watch
-grunt prod
+1. git clone https://github.com/hsagulo/jade-grunt-sass.git
+2. Type 'npm install' on Terminal on your mac
+3. run Grunt Watch
+4. Open localhost:8000
 
 
-Project Setup
---------------
-# install grunt for this project (generates ./node_modules)
-# run from within this directory
-npm install
-
-# NOTE: Machine Setup (heading below) must have occurred
-# at least once previously on this machine
-
-
-Machine Setup
---------------
-# install nodejs from
-http://nodejs.org/download/
-
-# from the command line install grunt cli
-sudo npm install -g grunt-cli
-
-# from the commdand line install sass
-- sudo gem install sass
-- npm install --save-dev grunt-sass
-
-*/
