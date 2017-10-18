@@ -51,11 +51,11 @@
 
 			.form-control {
 				font-size: 1em;
-				background-color: $gray-lighter;
+				background-color: $gray-200;
 				padding-top: .75em;
 				padding-bottom: .75em;
 				&.focused {
-					border-color: $brand-primary;
+					border-color: $blue;
 				}
 			} //form-control
 

@@ -5,7 +5,7 @@
 	vertical-align: middle;
 	p,ul {
 		margin-top: 1em;
-		color: $gray-light;
+		color: $gray-100;
 	}
 
 	p.numbers {
@@ -13,15 +13,15 @@
 	}
 
 	.fa-heart {
-		color: $brand-danger;
+		color: $red;
 		margin-right: .25em;
 	}
 
 	a {
-		color: $gray-light;
+		color: $gray-100;
 		&:hover {
 			text-decoration: none;
-			color: $brand-primary;
+			color: $blue;
 		}
 	}
 
