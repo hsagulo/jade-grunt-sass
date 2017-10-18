@@ -41,10 +41,13 @@
 			left: 0;
 	
 			li {
-				font-size: 3em;
+				font-size: 2.5em;
 				font-weight: 300;
-				line-height: 1.25;
+				line-height: 1.5;
 				text-transform: capitalize;
+		    display: block;
+		    width: 100%;
+		    text-align: left;
 				a {
 					color: white;
 					&:hover {

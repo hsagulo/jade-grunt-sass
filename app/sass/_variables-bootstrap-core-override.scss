@@ -3,8 +3,10 @@
 // $brand-danger: #eb422a;
 
 $transparent-blue: rgba(0,182,255,0.5);
-$font-default: 'Roboto', sans-serif;
-$headings-font-family: $font-default;
+$font-family-sans-serif: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+$headings-font-family: $font-family-sans-serif;
+$font-family-base:       $font-family-sans-serif;
+$headings-font-weight: 700;
 
 // $pink: #ff00ff;
 // $yellow: #ffff00;

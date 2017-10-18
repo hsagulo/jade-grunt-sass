@@ -1,21 +1,14 @@
 .home-reviews {
+	text-align: center;
 	background-color: $gray-100;
 	.entry-title {
 		text-align: center;
 	}
-	img {
-		max-width: 100%;
-	}
+
 	.review-title {
-		margin-bottom: 1em;
+		margin-bottom: .75em;
 		.col-sm-8 {
 			padding-top: 1em;
-		}
-		@include media-breakpoint-down(sm) {
-			img {
-				display: block;
-				margin: auto;
-			}
 		}
 	}
 	.reviewer {
@@ -23,7 +16,6 @@
 		@include media-breakpoint-down(sm) {
 			text-align: center;
 		}
-
 	}
 
 	.reviewer-title {
@@ -45,5 +37,14 @@
 		}
 	}
 
+}
 
+.slick-dots li {
+	margin: 0 10px;
+	button:before {
+		content: '';
+		width: 30px;
+	  height: 5px;
+	  background: $red;
+	}
 }

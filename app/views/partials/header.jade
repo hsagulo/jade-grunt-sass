@@ -2,7 +2,7 @@
   #hide-menu.cf
     img(src='/img/close.svg')
   nav.navbar.cf
-    ul.nav.nav-block
+    ul.nav.m-auto
       li.nav-item
         a(href='/') Home
       li.nav-item
@@ -15,33 +15,21 @@
         a(href='/contact') Contact
 //.mobile-menu
 
-header.site-header.navbar-full
+header.site-header.navbar-full.hide
   .container-fluid
-    .title-area.col-lg-3.col-md-6.col-xs-10
-      .row
+    .row
+      //.site-title-area
+      .title-area.col-lg-4.col-sm-8.col-9
         h1.site-title
           a(href='/') OnlineCrew
-    //.title-area
-    .site-social-media.col-lg-3.col-md-6.col-xs-10.hidden-md-down
-      .row
-        ul.list-unstyled.list-inline
-          li.list-inline-item
-            a(href='http://facebook.com/onlinecrw' target='_blank') Facebook
-          li.list-inline-item
-            a(href='http://instagram.com/onlinecrw' target='_blank') Instagram
-    //.site-social-media
-    .site-nav-widget.col-lg-6.col-sm-1.offset-xs-0.offset-md-5.offset-lg-0.col-xs-2
-      .row
-        nav.navbar.text-md-right.hidden-md-down
+      //.site-nav-widget
+      .site-nav-widget.col-lg-8.col-sm-4.col-3.text-lg-right
+        nav.nav.pull-right
           include nav.jade
-        .mobile-burger.hidden-lg-up
-          #open-menu
-            span
-            span
-            span
-
-
-
-    .site-nav-widget
+          .mobile-burger.d-md-block.d-lg-none
+            #open-menu
+              span
+              span
+              span
 //.site-header
           

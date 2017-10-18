@@ -1,17 +1,17 @@
-//bootstrap
-@import 'bootstrap/bootstrap';
-@import 'variables-bootstrap-core-override';
-
 //imports
 @import 'font-awesome';
 @import 'fonts';
 @import 'animate';
 @import 'slick';
 
+//bootstrap
+@import 'variables-bootstrap-core-override';
+@import 'bootstrap/bootstrap';
 
 //front-page
 @import 'front-page/home-sections';
 @import 'front-page/banner';
+@import 'front-page/services';
 @import 'front-page/about';
 @import 'front-page/works';
 @import 'front-page/reviews';

@@ -37,30 +37,38 @@ jQuery(document).ready(function($) {
 
   function addClassOnScroll() {
     if($('body').hasClass('home')) {
-      $('.site-header').addClass('navbar-fixed-top');
+      $('.site-header').addClass('scroll');
     } else {
 
     }
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
 
-        if(window.innerWidth > 320) {
-
-          if (scroll >= 100) {
-            $(".site-header").addClass("on-scroll-hide");
-          } else {
-            $(".site-header").removeClass("on-scroll-hide");
-          }
-
-          if(scroll >= 700) {
-            $(".site-header").addClass("on-scroll-show navbar-fixed-top");
-          } else {
-            $(".site-header").removeClass("on-scroll-show navbar-fixed-top");
-          }
-
-        }
-
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 800){  
+        $('.site-header').removeClass("hide");
+      }
+      else{
+        $('.site-header').addClass("hide");
+      }
     });
+
+    // $(window).scroll(function() {    
+    //     var scroll = $(window).scrollTop();
+
+    //     if(window.innerWidth > 320) {
+
+    //       if (scroll >= 100) {
+    //         $(".site-header").addClass("on-scroll-hide");
+    //       } else {
+    //         $(".site-header").removeClass("on-scroll-hide");
+    //       }
+
+    //       if(scroll >= 700) {
+    //         $(".site-header").addClass("on-scroll-show navbar-fixed-top");
+    //       } else {
+    //         $(".site-header").removeClass("on-scroll-show navbar-fixed-top");
+    //       }
+    //     }
+    // });
   };
 
   function cssAnimations() {
@@ -108,11 +116,23 @@ jQuery(document).ready(function($) {
       fade: true,
     });
 
+    $("#review-items").slick({
+      dots: true,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3500,
+      adaptiveHeight: true,
+      fade: true,
+    });
+
   }
 
   function showContactForm() {
+
     $('#show-form').click( function() {
-      $('.onlinecrew-form').removeClass('hidden-xs-up');
+      $('.onlinecrew-form').removeClass('d-none');
     });
 
 
@@ -132,9 +152,6 @@ jQuery(document).ready(function($) {
         $(this).removeClass('focused');
       }
     });
-
-
-
 
   }
 

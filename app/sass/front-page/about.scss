@@ -1,8 +1,10 @@
 .home-about {
+	background: $gray-200;
 	font-size: 1.25em;
 	text-align: center;
 	letter-spacing: 1.5px;
-	color: white;
+	color: $black;
+	padding: 3em 0;
 	position: relative;
 	h1 {
 		font-size: 2em;

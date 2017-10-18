@@ -1,16 +1,16 @@
 section.section-contact.home-sections.cf#contact
   .container-fluid
-    .col-lg-8.offset-lg-2
+    .col-lg-8.m-auto
       header.entry-header
         h3.entry-title Ready to Talk?
         button.btn.btn-lg.btn-danger#show-form Start a Project or Just Say Hello
 
-      form.onlinecrew-form.hidden-xs-up(method='post' action='/contactengine.php')
-        .form-group
-          select#Help.form-control-lg.custom-select.form-control(name='Select')
-            option(value='selected') How can we help you?
-            option(value='Start a project') Start a project
-            option(value='General Inquiries') General Inquiries
+      form.onlinecrew-form.d-none(method='post' action='/contactengine.php')
+        .form-group.form-control-lg.custom-select
+          select#Help.form-control(name='Select')
+            option(value='selected').opt1 How can we help you?
+            option(value='Start a project').opt2 Start a project
+            option(value='General Inquiries').opt3 General Inquiries
         .form-group
           label(for='Name') Your Name
             span.required.text-danger *
@@ -22,9 +22,12 @@ section.section-contact.home-sections.cf#contact
         .form-group
           label(for='Phone') Phone Number
           input#Phone.form-control-lg.form-control(name='Phone' required)
+        .form-group.d-none
+          label(for='Phone') Budget
+          input#budget.form-control-lg.form-control(name='Budget' required)
         .form-group.textarea
           label(for='Message') Your Message
-          textarea#Message.form-control-lg.form-control(rows='6' name='Message')
+          textarea#Message.form-control-lg.form-control(rows='3' name='Message')
         .form-group
           input.btn.btn-lg.btn-block.btn-danger(type='submit' name='submit' value='Submit')
 //.section-contact

@@ -1,40 +1,47 @@
 footer#footer.site-footer.dark-sections.cf
   .container-fluid
-    .col-md-6
-      a(href='/')
-        img(src='http://www.onlinecrewdesigns.com/img/onlinecrew-gray.svg' alt='OnlineCrew Designs logo' width="50" class='footer-logo')
-        p Deca Homes Resorts & Residences
+    .row
+      .col-md-6
+        a(href='/')
+          img(src='/img/onlinecrew-gray.svg' alt='OnlineCrew Designs logo' width="100" class='footer-logo')
+          p Deca Homes Resorts & Residences
+            br
+            | Tacunan, Davao City, 
+            br 
+            | Philippines 8000
+        address
+          span.numbers  P
+          span  63 82 291-7868
           br
-          | Tacunan, Davao City, 
-          br 
-          | Philippines 8000
-      p
-        span.numbers  P
-        span 63 82 291-7868
-        br
-        span.numbers M
-        span 63 936 6933 954
-      ul.list-inline
-        li.list-inline-item
-          a(href='https://facebook.com/onlinecrw' target='_blank') Facebook
-        li.list-inline-item
-          a(href='https://instagram.com/onlinecrw' target='_blank') Instagram
-      p.credits Made with 
-        span
-          i.fa.fa-heart   
-        span in Davao. &copy 2017 OnlineCrew.
-    .col-md-6
-      nav.navbar.text-md-right
-        include nav.jade
-//.site-footer
-      
+          span.numbers M
+          span  63 936 6933 954
+          br
+          span
+            a(href="mailto:info@onlinecrewdesigns.com") info@onlinecrewdesigns.com
+        ul.list-inline
+          li.list-inline-item
+            a(href="https://facebook.com/onlinecrw") FACEBOOK
+          li.list-inline-item
+            a(href="https://instagram.com/onlinecrw") INSTAGRAM
+        p.credits Made with 
+          span
+            i.fa.fa-heart   
+          span in Davao. &copy 2017 OnlineCrew.      
 
 
 
 
-script(src = 'http://www.onlinecrewdesigns.com/js/jquery.min.js' )
-script(src = 'http://www.onlinecrewdesigns.com/js/tether.min.js' )
-script(src = 'http://www.onlinecrewdesigns.com/js/app.min.js' )
+script(src = '/js/jquery.min.js' )
+script(src = '/js/tether.min.js' )
+
+script(src = '/js/bs4/popper.min.js' )
+script(src = '/js/bs4/bootstrap.min.js' )
+script(src = '/js/slick.min.js' )
+
+script(src = '/js/bs4/anchor.min.js' )
+script(src = '/js/bs4/clipboard.min.js' )
+script(src = '/js/bs4/holder.min.js' )
+script(src = '/js/app.min.js' )
 
 
 

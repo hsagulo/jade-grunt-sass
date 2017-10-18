@@ -1,13 +1,26 @@
 .site-header {
 	font-size: 1em;
 	letter-spacing: 2.5px;
+	width: 100%;
+	background: $gray-200;
 	padding-top: 1em;
 	padding-bottom: 1em;
 
-	@include media-breakpoint-down(sm) {
-		.container {
-			width: 100%;
-		}
+	&.hide {
+		position: fixed;
+		top: -100% !important;
+	}
+
+	&.scroll {
+		position: fixed;
+		top: 0;
+		z-index: 8000;
+		
+		transition: top ease 500ms;
+		-webkit-transition: top ease 500ms;
+		-moz-transition: top ease 500ms;
+		-o-transition: top ease 500ms;
+
 	}
 
 	@include media-breakpoint-down(xs) {
@@ -17,6 +30,8 @@
 
 	.title-area {
 		.site-title {
+			display: block;
+			width: 100%;
 			a {
 				text-indent: -10000px;
 				background: url(../img/logo-black.svg)no-repeat top left;

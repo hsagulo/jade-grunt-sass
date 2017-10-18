@@ -33,7 +33,7 @@
       <div id="mobile-menu" class="mobile-menu hidden-lg-up">
         <div id="hide-menu" class="cf"><img src="/img/close.svg"></div>
         <nav class="navbar cf">
-          <ul class="nav nav-block">
+          <ul class="nav m-auto">
             <li class="nav-item"><a href="/">Home</a></li>
             <li class="nav-item"><a href="/about">About</a></li>
             <li class="nav-item"><a href="/works">Works</a></li>
@@ -43,40 +43,29 @@
         </nav>
       </div>
       <!--.mobile-menu-->
-      <header class="site-header navbar-full">
+      <header class="site-header navbar-full hide">
         <div class="container-fluid">
-          <div class="title-area col-lg-3 col-md-6 col-xs-10">
-            <div class="row">
+          <div class="row">
+            <!--.site-title-area-->
+            <div class="title-area col-lg-4 col-sm-8 col-9">
               <h1 class="site-title"><a href="/">OnlineCrew</a></h1>
             </div>
-          </div>
-          <!--.title-area-->
-          <div class="site-social-media col-lg-3 col-md-6 col-xs-10 hidden-md-down">
-            <div class="row">
-              <ul class="list-unstyled list-inline">
-                <li class="list-inline-item"><a href="http://facebook.com/onlinecrw" target="_blank">Facebook</a></li>
-                <li class="list-inline-item"><a href="http://instagram.com/onlinecrw" target="_blank">Instagram</a></li>
-              </ul>
-            </div>
-          </div>
-          <!--.site-social-media-->
-          <div class="site-nav-widget col-lg-6 col-sm-1 offset-xs-0 offset-md-5 offset-lg-0 col-xs-2">
-            <div class="row">
-              <nav class="navbar text-md-right hidden-md-down">
-                <ul class="nav nav-inline">
+            <!--.site-nav-widget-->
+            <div class="site-nav-widget col-lg-8 col-sm-4 col-3 text-lg-right">
+              <nav class="nav pull-right">
+                <ul class="navbar-nav justify-content-end d-none d-lg-block">
                   <li class="nav-item"><a href="/">Home</a></li>
                   <li class="nav-item"><a href="/about">About</a></li>
                   <li class="nav-item"><a href="/works">Works</a></li>
                   <li class="nav-item"><a href="/">Services</a></li>
                   <li class="nav-item"><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="mobile-burger d-md-block d-lg-none">
+                  <div id="open-menu"><span></span><span></span><span></span></div>
+                </div>
               </nav>
-              <div class="mobile-burger hidden-lg-up">
-                <div id="open-menu"><span></span><span></span><span></span></div>
-              </div>
             </div>
           </div>
-          <div class="site-nav-widget"></div>
         </div>
       </header>
       <!--.site-header
@@ -84,8 +73,7 @@
       <section class="home-banner home-sections cf">
         <div class="container-fluid">
           <div class="banner-wrap">
-            <h2>WELCOME TO ONLINECREW.</h2>
-            <h1>We Help Small & Medium Sized Businesses Connect to the World.</h1>
+            <h1>We help entrepreneurs and small businesses to grow in the online space.</h1><a href="#" class="btn btn-outline-primary btn-md">SEE OUR WORKS</a>
           </div>
         </div>
         <div class="slide-wrapper">
@@ -95,29 +83,42 @@
         </div>
       </section>
       <!--.home-banner-->
-      <div class="home-about dark-sections">
+      <section class="serction-services home-services text-center cf">
         <div class="container-fluid">
-          <div class="col-md-10 offset-md-1">
-            <div class="section-content">
-              <h1>We are a Web Design and Development Team.</h1>
-              <div class="section-content-text">
-                <p>We Help Small & Medium Sized Businesses Connect to the World by creating a beautiful designs that work.</p>
+          <div class="row">
+            <div class="entry-header-content">
+              <div class="col-sm-8 m-auto">
+                <h2>Making life simple, doing things the smart way.</h2>
+                <p>With our experiences in branding, website designs and social media we have simplified the process of creating modern-day websites. We create websites with the purpose of creating communities around them and to tell a story the simplest and smartest ways possible!</p>
               </div>
-              <p><a href="/works" class="btn btn-default">SEE OUR WORK</a></p>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon icon-gfx"><img src="/img/branding.png" alt="Branding Design"></div>
+              <h3>Branding Design</h3>
+              <p>Creating an identity for your brand with our top-notch design work.</p>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon icon-web"><img src="/img/web.png" alt="Website Design and Development"></div>
+              <h3>Web Design & Development</h3>
+              <p>Mobile-friendly, fast and scrure websites and apps are our specialty.</p>
+            </div>
+            <div class="col-sm-4">
+              <div class="icon icon-web"><img src="/img/social-media.png" alt="Social Media Management"></div>
+              <h3>Social Media Management</h3>
+              <p>Increase leads and followers. We can help you build your community.</p>
             </div>
           </div>
         </div>
-      </div>
-      <!--.home-about-->
+      </section>
       <section class="section-works home-sections cf">
-        <div class="container-fluid">
-          <header class="entry-header cf">
-            <div class="col-sm-12">
-              <h3 class="entry-title">Recent Works</h3>
-            </div>
-          </header>
-          <div class="entry-content cf">
-            <div class="col-sm-6">
+        <header class="entry-header cf">
+          <div class="col-sm-12">
+            <h3 class="entry-title">Recent Works</h3>
+          </div>
+        </header>
+        <div class="entry-content cf">
+          <div class="row">
+            <div class="col-sm-3">
               <div class="row">
                 <div class="card"><img src="img/work-arrow.jpg" alt="Arrow Marketing" class="card-img"><a href="/works/arrow-marketing" title="Arrow Marketing">       
                     <div class="card-img-overlays">
@@ -125,7 +126,7 @@
                     </div></a></div>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-3">
               <div class="row">
                 <div class="card"><img src="img/work-dalthan.jpg" alt="Dalthan Printing Press" class="card-img"><a href="/works/dalthan-printing" title="Dalthan Printing Press">   
                     <div class="card-img-overlays">
@@ -133,73 +134,123 @@
                     </div></a></div>
               </div>
             </div>
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="card"><img src="img/work-kyle.jpg" alt="Kyle Born" class="card-img"><a href="/works/kyleborn" title="Kyle Born">  
+                    <div class="card-img-overlays">
+                      <h3 class="card-title">Kyle Born<br><small>Motocross Racer</small></h3>
+                    </div></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="card"><img src="img/work-bitterman.jpg" alt="Kyle Bitterman" class="card-img"><a href="/works/kylebitterman" title="Kyle Bitterman">  
+                    <div class="card-img-overlays">
+                      <h3 class="card-title">Kyle Bitterman<br><small>Professional Motocross Racer</small></h3>
+                    </div></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="card"><img src="img/work-homework.jpg" alt="My Homework LLC" class="card-img"><a href="/works/homework" title="My Homework LLC">  
+                    <div class="card-img-overlays">
+                      <h3 class="card-title">My Homework LLC<br><small>Construction Company</small></h3>
+                    </div></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="card"><img src="img/work-mxzen.jpg" alt="MX Zen Academy" class="card-img"><a href="/works/mxzen" title="MX Zen Academy">  
+                    <div class="card-img-overlays">
+                      <h3 class="card-title">MX Zen<br><small>Motocross Promotions</small></h3>
+                    </div></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="card"><img src="img/work-rabbitfoot.jpg" alt="Rabbitfoot Photography" class="card-img"><a href="/works/rabbitfoot-photography" title="Rabbitfoot Photography">
+                    <div class="card-img-overlays">
+                      <h3 class="card-title">Rabbitfoot Photography<br><small>Tagum City Wedding Photographer</small></h3>
+                    </div></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="card"><img src="img/work-angelajaboro.jpg" alt="Angela Jaboro Photography" class="card-img"><a href="/works/angelajaboro" title="Jaboro Photography">  
+                    <div class="card-img-overlays">
+                      <h3 class="card-title">Angela Jaboro Photography<br><small>Freelance Photographer</small></h3>
+                    </div></a></div>
+              </div>
+            </div>
           </div>
-          <footer class="entry-footer cf">
-            <p class="text-xs-center"><a href="/works" class="btn btn-lg btn-default">SEE OUR WORK</a></p>
-          </footer>
         </div>
       </section>
       <section class="home-reviews home-sections cf">
-        <div class="container-fluid">
+        <div class="container">
           <header class="entry-header">
             <div class="col-xs-12">
-              <h3 class="entry-title">Reviews from Clients</h3>
+              <h2 class="entry-title">What our client say...</h2>
             </div>
           </header>
           <!--.entry-header-->
-          <div class="reviews-container cf">
-            <div class="reviews-wrapper">
-              <div class="reviews-item col-md-4">
-                <header class="review-title cf">
-                  <div class="col-sm-3">
-                    <div class="row"><img src="img/review-1.png" alt="Dr Stephen Anthony"></div>
-                  </div>
-                  <div class="col-sm-9">
-                    <h4 class="reviewer">Dr. Stephen Anthony</h4>
-                    <p class="reviewer-title">Stress Management, Ukraine</p>
-                  </div>
-                </header>
-                <div class="review-content">
-                  <p>I have used Onlinecrew's web design services  for many projects, they helped in the design and delivery of several complex design and wordpress sites, and based on their work, I would rank them as one of the best designers I have worked with.</p>
-                  <p>Onlinecrew distinguished themselves by consistently working hard on design and incorporating all our feedback and there services where also budget friendly.</p>
-                  <p>I would highly recommend their services as they are reliable, hardworking and is able to implement several design ideas.</p>
-                </div>
+          <div id="review-items" class="reviews-wrapper">
+            <div class="reviews-item">
+              <header class="review-title cf"><img src="img/review-monkayo.png" alt="" class="m-auto">
+                <h4 class="reviewer">Sunshine G. Paulin</h4>
+                <p class="reviewer-title">LGU Monkayo / monkayo.gov.ph</p>
+              </header>
+              <div class="review-content">
+                <p>Excellent job in creating the official website of the Municipality of Monkayo. Online Crew incorporated our design and gave helpful and constructive ideas in developing the government site. They can address all your queries in real time and very amenable in answering all our concerns.</p>
               </div>
-              <div class="reviews-item col-md-4">
-                <header class="review-title cf">
-                  <div class="col-sm-3">
-                    <div class="row"><img src="img/review-joshuajantz.png" alt="Joshua Jantz Caveman websites"></div>
-                  </div>
-                  <div class="col-sm-9">
-                    <h4 class="reviewer">Joshua Jantz</h4>
-                    <p class="reviewer-title">Caveman Websites, USA</p>
-                  </div>
-                </header>
-                <div class="review-content">
-                  <p>I feel blessed to have OnlineCrew working for me. I especially appreciate the positive, happy, and can-do attitude.</p>
-                </div>
+            </div>
+            <div class="reviews-item">
+              <header class="review-title cf"><img src="img/review-luca.png" alt="" class="m-auto">
+                <h4 class="reviewer">Luca Fedelini</h4>
+                <p class="reviewer-title">MX Dad & Rider / motocrossmac.com</p>
+              </header>
+              <div class="review-content">
+                <p>This was truly a fantastic experience. I had an idea of what we wanted as a web page then Harold was able to guide us in the execution and details. It was a very simple process as to what I was expecting and would highly recommend them for any type of graphic design and web page. Thanks again !!!!</p>
               </div>
-              <div class="reviews-item col-md-4">
-                <header class="review-title cf">
-                  <div class="col-sm-3">
-                    <div class="row"><img src="img/review-3.png"></div>
-                  </div>
-                  <div class="col-sm-9">
-                    <h4 class="reviewer">Will Lai</h4>
-                    <p class="reviewer-title">Marketing SG, LLC, Singapore</p>
-                  </div>
-                </header>
-                <div class="review-content">
-                  <p>We have had the opportunity to work with Harold for more than a year. Harold has always shown great attitude and a positive spirit. He is a great team player and would communicate promptly on matters. He is professional in his dealings and a hardworking member.</p>
-                </div>
+            </div>
+            <div class="reviews-item">
+              <header class="review-title cf"><img src="img/review-1.png" alt="Dr Stephen Anthony" class="m-auto">
+                <h4 class="reviewer">Dr. Stephen Anthony</h4>
+                <p class="reviewer-title">Stress Management, Ukraine</p>
+              </header>
+              <div class="review-content">
+                <p>I have used Onlinecrew's web design services  for many projects, they helped in the design and delivery of several complex design and wordpress sites, and based on their work, I would rank them as one of the best designers I have worked with.</p>
+                <p>Onlinecrew distinguished themselves by consistently working hard on design and incorporating all our feedback and there services where also budget friendly.</p>
+                <p>I would highly recommend their services as they are reliable, hardworking and is able to implement several design ideas.</p>
+              </div>
+            </div>
+            <div class="reviews-item">
+              <header class="review-title cf"><img src="img/review-3.png" class="m-auto">
+                <h4 class="reviewer">Will Lai</h4>
+                <p class="reviewer-title">ClickRefresh, USA / clickrefresh.com</p>
+              </header>
+              <div class="review-content">
+                <p>We have had the opportunity to work with Harold for more than a year. Harold has always shown great attitude and a positive spirit. He is a great team player and would communicate promptly on matters. He is professional in his dealings and a hardworking member.</p>
+              </div>
+            </div>
+            <div class="reviews-item">
+              <header class="review-title cf"><img src="img/review-monkayo.png" alt="" class="m-auto">
+                <h4 class="reviewer">Basel N Linda Farraj</h4>
+                <p class="reviewer-title">Hair Free Centre / hairfreecenter.com</p>
+              </header>
+              <div class="review-content">
+                <p>Great job, I am so thankful for the amazing service and the quality.</p>
+              </div>
+            </div>
+            <div class="reviews-item">
+              <header class="review-title cf"><img src="img/review-joshuajantz.png" alt="Joshua Jantz Caveman websites" class="m-auto">
+                <h4 class="reviewer">Joshua Jantz</h4>
+                <p class="reviewer-title">Caveman Websites, USA</p>
+              </header>
+              <div class="review-content">
+                <p>I feel blessed to have OnlineCrew working for me. I especially appreciate the positive, happy, and can-do attitude.</p>
               </div>
             </div>
           </div>
-          <!--.reviews-container-->
-          <footer class="entry-footer cf">
-            <div class="text-xs-center"><a href="/reviews" class="btn btn-default">SEE ALL REVIEWS</a></div>
-          </footer>
-          <!--.entry-footer-->
         </div>
       </section>
       <!--.home-reviews-->
@@ -207,17 +258,17 @@
       
       <section id="contact" class="section-contact home-sections cf">
         <div class="container-fluid">
-          <div class="col-lg-8 offset-lg-2">
+          <div class="col-lg-8 m-auto">
             <header class="entry-header">
               <h3 class="entry-title">Ready to Talk?</h3>
               <button id="show-form" class="btn btn-lg btn-danger">Start a Project or Just Say Hello</button>
             </header>
-            <form method="post" action="/contactengine.php" class="onlinecrew-form hidden-xs-up">
-              <div class="form-group">
-                <select id="Help" name="Select" class="form-control-lg custom-select form-control">
-                  <option value="selected">How can we help you?</option>
-                  <option value="Start a project">Start a project</option>
-                  <option value="General Inquiries">General Inquiries</option>
+            <form method="post" action="/contactengine.php" class="onlinecrew-form d-none">
+              <div class="form-group form-control-lg custom-select">
+                <select id="Help" name="Select" class="form-control">
+                  <option value="selected" class="opt1">How can we help you?</option>
+                  <option value="Start a project" class="opt2">Start a project</option>
+                  <option value="General Inquiries" class="opt3">General Inquiries</option>
                 </select>
               </div>
               <div class="form-group">
@@ -232,9 +283,13 @@
                 <label for="Phone">Phone Number</label>
                 <input id="Phone" name="Phone" required class="form-control-lg form-control">
               </div>
+              <div class="form-group d-none">
+                <label for="Phone">Budget</label>
+                <input id="budget" name="Budget" required class="form-control-lg form-control">
+              </div>
               <div class="form-group textarea">
                 <label for="Message">Your Message</label>
-                <textarea id="Message" rows="6" name="Message" class="form-control-lg form-control"></textarea>
+                <textarea id="Message" rows="3" name="Message" class="form-control-lg form-control"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-block btn-danger">
@@ -246,36 +301,28 @@
       <!--.section-contact-->
       <footer id="footer" class="site-footer dark-sections cf">
         <div class="container-fluid">
-          <div class="col-md-6"><a href="/"><img src="http://www.onlinecrewdesigns.com/img/onlinecrew-gray.svg" alt="OnlineCrew Designs logo" width="50" class="footer-logo">
-              <p>Deca Homes Resorts & Residences<br>Tacunan, Davao City, <br>Philippines 8000</p></a>
-            <p><span class="numbers"> P</span><span>63 82 291-7868</span><br><span class="numbers">M</span><span>63 936 6933 954</span></p>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="https://facebook.com/onlinecrw" target="_blank">Facebook</a></li>
-              <li class="list-inline-item"><a href="https://instagram.com/onlinecrw" target="_blank">Instagram</a></li>
-            </ul>
-            <p class="credits">Made with <span><i class="fa fa-heart">  </i></span><span>in Davao. &copy 2017 OnlineCrew.</span></p>
-          </div>
-          <div class="col-md-6">
-            <nav class="navbar text-md-right">
-              <ul class="nav nav-inline">
-                <li class="nav-item"><a href="/">Home</a></li>
-                <li class="nav-item"><a href="/about">About</a></li>
-                <li class="nav-item"><a href="/works">Works</a></li>
-                <li class="nav-item"><a href="/">Services</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
+          <div class="row">
+            <div class="col-md-6"><a href="/"><img src="/img/onlinecrew-gray.svg" alt="OnlineCrew Designs logo" width="100" class="footer-logo">
+                <p>Deca Homes Resorts & Residences<br>Tacunan, Davao City, <br>Philippines 8000</p></a>
+              <address><span class="numbers"> P</span><span> 63 82 291-7868</span><br><span class="numbers">M</span><span> 63 936 6933 954</span><br><span><a href="mailto:info@onlinecrewdesigns.com">info@onlinecrewdesigns.com</a></span></address>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://facebook.com/onlinecrw">FACEBOOK</a></li>
+                <li class="list-inline-item"><a href="https://instagram.com/onlinecrw">INSTAGRAM</a></li>
               </ul>
-            </nav>
+              <p class="credits">Made with <span><i class="fa fa-heart">  </i></span><span>in Davao. &copy 2017 OnlineCrew.      </span></p>
+            </div>
           </div>
         </div>
       </footer>
-      <!--.site-footer-->
-      
-      
-      
-      
-      <script src="http://www.onlinecrewdesigns.com/js/jquery.min.js"></script>
-      <script src="http://www.onlinecrewdesigns.com/js/tether.min.js"></script>
-      <script src="http://www.onlinecrewdesigns.com/js/app.min.js"></script>
+      <script src="/js/jquery.min.js"></script>
+      <script src="/js/tether.min.js"></script>
+      <script src="/js/bs4/popper.min.js"></script>
+      <script src="/js/bs4/bootstrap.min.js"></script>
+      <script src="/js/slick.min.js"></script>
+      <script src="/js/bs4/anchor.min.js"></script>
+      <script src="/js/bs4/clipboard.min.js"></script>
+      <script src="/js/bs4/holder.min.js"></script>
+      <script src="/js/app.min.js"></script>
     </div>
   </body>
 </html>

@@ -1,14 +1,14 @@
 .home-sections {
-	padding-top: 8em;
-	padding-bottom: 8em;
+	padding-top: 3em;
+	padding-bottom: 4em;
 	@include media-breakpoint-down(md) {
 		padding-top: 3em;
 		padding-bottom: 3em;
 	}
 	.entry-header {
 		.entry-title {
-			font-size: 3em;
-			margin-bottom: 2em;
+			font-size: 2.5em;
+			margin-bottom: 1em;
 			@include media-breakpoint-down(sm) {
 				font-size: 2em;
 				margin-bottom: 1em;

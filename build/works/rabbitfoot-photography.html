@@ -19,7 +19,7 @@
     <div id="mobile-menu" class="mobile-menu hidden-lg-up">
       <div id="hide-menu" class="cf"><img src="/img/close.svg"></div>
       <nav class="navbar cf">
-        <ul class="nav nav-block">
+        <ul class="nav m-auto">
           <li class="nav-item"><a href="/">Home</a></li>
           <li class="nav-item"><a href="/about">About</a></li>
           <li class="nav-item"><a href="/works">Works</a></li>
@@ -29,40 +29,29 @@
       </nav>
     </div>
     <!--.mobile-menu-->
-    <header class="site-header navbar-full">
+    <header class="site-header navbar-full hide">
       <div class="container-fluid">
-        <div class="title-area col-lg-3 col-md-6 col-xs-10">
-          <div class="row">
+        <div class="row">
+          <!--.site-title-area-->
+          <div class="title-area col-lg-4 col-sm-8 col-9">
             <h1 class="site-title"><a href="/">OnlineCrew</a></h1>
           </div>
-        </div>
-        <!--.title-area-->
-        <div class="site-social-media col-lg-3 col-md-6 col-xs-10 hidden-md-down">
-          <div class="row">
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item"><a href="http://facebook.com/onlinecrw" target="_blank">Facebook</a></li>
-              <li class="list-inline-item"><a href="http://instagram.com/onlinecrw" target="_blank">Instagram</a></li>
-            </ul>
-          </div>
-        </div>
-        <!--.site-social-media-->
-        <div class="site-nav-widget col-lg-6 col-sm-1 offset-xs-0 offset-md-5 offset-lg-0 col-xs-2">
-          <div class="row">
-            <nav class="navbar text-md-right hidden-md-down">
-              <ul class="nav nav-inline">
+          <!--.site-nav-widget-->
+          <div class="site-nav-widget col-lg-8 col-sm-4 col-3 text-lg-right">
+            <nav class="nav pull-right">
+              <ul class="navbar-nav justify-content-end d-none d-lg-block">
                 <li class="nav-item"><a href="/">Home</a></li>
                 <li class="nav-item"><a href="/about">About</a></li>
                 <li class="nav-item"><a href="/works">Works</a></li>
                 <li class="nav-item"><a href="/">Services</a></li>
                 <li class="nav-item"><a href="#contact">Contact</a></li>
               </ul>
+              <div class="mobile-burger d-md-block d-lg-none">
+                <div id="open-menu"><span></span><span></span><span></span></div>
+              </div>
             </nav>
-            <div class="mobile-burger hidden-lg-up">
-              <div id="open-menu"><span></span><span></span><span></span></div>
-            </div>
           </div>
         </div>
-        <div class="site-nav-widget"></div>
       </div>
     </header>
     <!--.site-header
@@ -83,17 +72,17 @@
     </section>
     <section id="contact" class="section-contact home-sections cf">
       <div class="container-fluid">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="col-lg-8 m-auto">
           <header class="entry-header">
             <h3 class="entry-title">Ready to Talk?</h3>
             <button id="show-form" class="btn btn-lg btn-danger">Start a Project or Just Say Hello</button>
           </header>
-          <form method="post" action="/contactengine.php" class="onlinecrew-form hidden-xs-up">
-            <div class="form-group">
-              <select id="Help" name="Select" class="form-control-lg custom-select form-control">
-                <option value="selected">How can we help you?</option>
-                <option value="Start a project">Start a project</option>
-                <option value="General Inquiries">General Inquiries</option>
+          <form method="post" action="/contactengine.php" class="onlinecrew-form d-none">
+            <div class="form-group form-control-lg custom-select">
+              <select id="Help" name="Select" class="form-control">
+                <option value="selected" class="opt1">How can we help you?</option>
+                <option value="Start a project" class="opt2">Start a project</option>
+                <option value="General Inquiries" class="opt3">General Inquiries</option>
               </select>
             </div>
             <div class="form-group">
@@ -108,9 +97,13 @@
               <label for="Phone">Phone Number</label>
               <input id="Phone" name="Phone" required class="form-control-lg form-control">
             </div>
+            <div class="form-group d-none">
+              <label for="Phone">Budget</label>
+              <input id="budget" name="Budget" required class="form-control-lg form-control">
+            </div>
             <div class="form-group textarea">
               <label for="Message">Your Message</label>
-              <textarea id="Message" rows="6" name="Message" class="form-control-lg form-control"></textarea>
+              <textarea id="Message" rows="3" name="Message" class="form-control-lg form-control"></textarea>
             </div>
             <div class="form-group">
               <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-block btn-danger">
@@ -122,35 +115,27 @@
     <!--.section-contact-->
     <footer id="footer" class="site-footer dark-sections cf">
       <div class="container-fluid">
-        <div class="col-md-6"><a href="/"><img src="http://www.onlinecrewdesigns.com/img/onlinecrew-gray.svg" alt="OnlineCrew Designs logo" width="50" class="footer-logo">
-            <p>Deca Homes Resorts & Residences<br>Tacunan, Davao City, <br>Philippines 8000</p></a>
-          <p><span class="numbers"> P</span><span>63 82 291-7868</span><br><span class="numbers">M</span><span>63 936 6933 954</span></p>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://facebook.com/onlinecrw" target="_blank">Facebook</a></li>
-            <li class="list-inline-item"><a href="https://instagram.com/onlinecrw" target="_blank">Instagram</a></li>
-          </ul>
-          <p class="credits">Made with <span><i class="fa fa-heart">  </i></span><span>in Davao. &copy 2017 OnlineCrew.</span></p>
-        </div>
-        <div class="col-md-6">
-          <nav class="navbar text-md-right">
-            <ul class="nav nav-inline">
-              <li class="nav-item"><a href="/">Home</a></li>
-              <li class="nav-item"><a href="/about">About</a></li>
-              <li class="nav-item"><a href="/works">Works</a></li>
-              <li class="nav-item"><a href="/">Services</a></li>
-              <li class="nav-item"><a href="#contact">Contact</a></li>
+        <div class="row">
+          <div class="col-md-6"><a href="/"><img src="/img/onlinecrew-gray.svg" alt="OnlineCrew Designs logo" width="100" class="footer-logo">
+              <p>Deca Homes Resorts & Residences<br>Tacunan, Davao City, <br>Philippines 8000</p></a>
+            <address><span class="numbers"> P</span><span> 63 82 291-7868</span><br><span class="numbers">M</span><span> 63 936 6933 954</span><br><span><a href="mailto:info@onlinecrewdesigns.com">info@onlinecrewdesigns.com</a></span></address>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://facebook.com/onlinecrw">FACEBOOK</a></li>
+              <li class="list-inline-item"><a href="https://instagram.com/onlinecrw">INSTAGRAM</a></li>
             </ul>
-          </nav>
+            <p class="credits">Made with <span><i class="fa fa-heart">  </i></span><span>in Davao. &copy 2017 OnlineCrew.      </span></p>
+          </div>
         </div>
       </div>
     </footer>
-    <!--.site-footer-->
-    
-    
-    
-    
-    <script src="http://www.onlinecrewdesigns.com/js/jquery.min.js"></script>
-    <script src="http://www.onlinecrewdesigns.com/js/tether.min.js"></script>
-    <script src="http://www.onlinecrewdesigns.com/js/app.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bs4/popper.min.js"></script>
+    <script src="/js/bs4/bootstrap.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/bs4/anchor.min.js"></script>
+    <script src="/js/bs4/clipboard.min.js"></script>
+    <script src="/js/bs4/holder.min.js"></script>
+    <script src="/js/app.min.js"></script>
   </body>
 </html>

@@ -1,9 +1,11 @@
 .site-footer {
+	font-weight: 300;
 	padding-top: 5em;
 	padding-bottom: 5em;
 	font-size: 1em;
 	vertical-align: middle;
-	p,ul {
+	background: $gray-900;
+	p,ul,address {
 		margin-top: 1em;
 		color: $gray-100;
 	}
@@ -26,7 +28,7 @@
 	}
 
 	.navbar {
-		font-size: 1.2em;
+		font-size: 1em;
 
 		@include media-breakpoint-down(sm) {
 			display: none;
