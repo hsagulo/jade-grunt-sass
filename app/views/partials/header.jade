@@ -1,35 +1,52 @@
-#mobile-menu.mobile-menu.hidden-lg-up
-  #hide-menu.cf
-    img(src='/img/close.svg')
-  nav.navbar.cf
-    ul.nav.m-auto
-      li.nav-item
-        a(href='/') Home
-      li.nav-item
-        a(href='/about') About
-      li.nav-item
-        a(href='/works') Works
-      li.nav-item
-        a(href='/services') Services
-      li.nav-item
-        a(href='/contact') Contact
-//.mobile-menu
+//- #mobile-menu.mobile-menu.hidden-lg-up
+//-   #hide-menu.cf
+//-     img(src='/img/close.svg')
+//-   nav.navbar.cf
+//-     ul.nav.m-auto
+//-       li.nav-item
+//-         a(href='/') Home
+//-       li.nav-item
+//-         a(href='/about') About
+//-       li.nav-item
+//-         a(href='/works') Works
+//-       li.nav-item
+//-         a(href='/services') Services
+//-       li.nav-item
+//-         a(href='/contact') Contact
+//- //.mobile-menu
 
-header.site-header.navbar-full.hide
-  .container-fluid
+header.navbar.site-header.navbar-toggleable-lg.navbar-dark.bd-navbar
+  nav.container-fluid.w-100
     .row
-      //.site-title-area
-      .title-area.col-lg-4.col-sm-8.col-9
+      .d-flex.justify-content-between.d-lg-none
         h1.site-title
-          a(href='/') OnlineCrew
-      //.site-nav-widget
-      .site-nav-widget.col-lg-8.col-sm-4.col-3.text-lg-right
-        nav.nav.pull-right
-          include nav.jade
-          .mobile-burger.d-md-block.d-lg-none
-            #open-menu
-              span
-              span
-              span
-//.site-header
-          
+          a.navbar-brand(href='/')
+            span.d-none OnlineCrew
+            img(src="../img/logo-black.svg")
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#bd-main-nav', aria-controls='bd-main-nav', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+      #bd-main-nav.collapse.navbar-collapse
+        h1.site-title
+          a.navbar-brand(href='/').d-none.d-lg-block
+            span.d-none OnlineCrew
+            img(src="../img/logo-black.svg")
+        ul.nav.navbar-nav.mr-auto
+          li.nav-item
+            a(href='/') Home
+          li.nav-item
+            a(href='/') About
+          li.nav-item
+            a(href='/') Works
+          li.nav-item
+            a(href='/') Services
+          li.nav-item
+            a(href='/#contact') Contact
+
+        ul.nav.navbar-nav.list-inline.my-2.my-md-0
+          li.list-inline-item.nav-item
+            a(href='https://instagram.com/onlinecrw') INSTAGRAM
+          li.list-inline-item.nav-item
+            a(href='https://facebook.com/onlinecrw') FACEBOOK
+
+
+

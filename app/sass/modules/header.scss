@@ -2,9 +2,13 @@
 	font-size: 1em;
 	letter-spacing: 2.5px;
 	width: 100%;
-	background: $gray-200;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	background: $yellow;
+	padding-top: 0;
+	padding-bottom: 0;
+
+	@include media-breakpoint-between(md,lg) {
+		font-size: .75em;
+	}
 
 	&.hide {
 		position: fixed;
@@ -27,31 +31,30 @@
 		padding-bottom: 0;
 	}
 
+	.site-title {
+		display: block;
+		width: 8em;
+		@include media-breakpoint-down(xs) {
+			width: 6em;
+		}
+		a.navbar-brand {
+			span {
+				text-indent: -10000px;
+			}
+			display: block;
+			img {
+				width: 100%;
+			}
+			// @include media-breakpoint-between(md, xl) {
+			// 	background-size: 100%;
+			// }
+		}
+	}
 
 	.title-area {
 		.site-title {
 			display: block;
 			width: 100%;
-			a {
-				text-indent: -10000px;
-				background: url(../img/logo-black.svg)no-repeat top left;
-				background-size: 7em;
-				min-height: 1.875em;
-				display: block;
-				// @include media-breakpoint-between(md, xl) {
-				// 	background-size: 100%;
-				// }
-				@include media-breakpoint-down(lg) {
-					background-size: 7em;
-				}
-				@include media-breakpoint-up(md) {
-					min-height: 1.5em;
-				}
-				@include media-breakpoint-down(xs) {
-			    min-height: .75em;
-			    background-size: 4em;
-				}
-			}
 		}
 	}
 
@@ -98,7 +101,7 @@
 
 	.site-nav-widget {
 		text-transform: uppercase;
-		padding-top: .875em;
+		padding-top: 1.5em;
 		@include media-breakpoint-down(xs) {
 			padding-top: .25em;
 		}

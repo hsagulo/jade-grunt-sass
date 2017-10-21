@@ -26,6 +26,9 @@
 		overflow: hidden;
 		margin-bottom: 0;
 		border-radius: 0;
+		@include media-breakpoint-down(sm) {
+			border-bottom: 2px solid $yellow;
+		}
 		.card-img-overlays {
 			@include media-breakpoint-up(lg) {
 				opacity: 0;
@@ -67,6 +70,24 @@
 			
 			animation-delay: 1s;
 
+			@include media-breakpoint-down(sm) {
+				position: static;
+				color: $white;
+				background: $black;
+				padding: .5em 0;
+				font-size: 1em;
+				width: 75%;
+    		margin: 1em auto 0;
+				
+				.btn {
+					font-size: 10px;
+					// color: $yellow;
+					// &:hover {
+					// 	color: $white;
+					// }
+				}
+			}
+
 			a {
 				color: white;
 				&:hover {
@@ -104,33 +125,11 @@
 			.card-img-overlays {
 				opacity: 1;
 				.card-title {
-					font-size: 1.25em;
 					opacity: 1;
 				}
 			}
 		}
 
-		@include media-breakpoint-down(sm) {
-			&:before {
-				content: '';
-				display: block;
-				clear: both;
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				background: $blue;
-			}
-		}
-
-		@include media-breakpoint-down(xs) {
-			.card-img-overlays {
-				.card-title {
-					font-size: 1.5em;
-				}
-			}
-		}
 	}
 	
 	.entry-footer {

@@ -1,6 +1,17 @@
 .home-services {
 	padding: 3em 0;
 	background: $gray-100;
+
+	@include media-breakpoint-down(sm) {
+		font-size: .875em;
+		h2 {
+			font-size: 2em;
+		}
+		h3 {
+				font-size: 1.25em;
+			}
+	}
+
 	.entry-header-content {
 		margin-bottom: 3em;
 	}
@@ -8,6 +19,9 @@
 		img {
 			width: 10em;
 			margin-bottom: 1em;
+			@include media-breakpoint-down(sm) {
+				width: 6em;
+			}
 		}
 	}
 }
